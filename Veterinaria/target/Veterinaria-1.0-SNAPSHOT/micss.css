@@ -1,0 +1,159 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 1/03/2023, 7:40:36 a. m.
+    Author     : oscar
+*/
+body {
+			background-image: url('https://media.istockphoto.com/id/1161880635/es/vector/veterinario-y-m%C3%A9dico-con-perro-y-gato-en-mostrador-en-cl%C3%ADnica-veterinaria.jpg?s=612x612&w=0&k=20&c=-IIHOZs_EPiQ-zSJf_Xcq8iA6Xz_0wkNWyJdvHrd_4s=');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			opacity: 1;
+                        z-index: 0;
+		}
+                
+                #box1{
+                    z-index:1;
+                    background-color:#FFFFFF;
+                    width: 600px;
+			color: black;
+			font-size: 60px;
+			text-align: center;
+			margin-top: 80px;
+                        margin-bottom: 10px;
+			padding: 10px;
+			border-radius: 10px;
+			border: none;
+			outline: none;
+                        border:solid 1px black;
+                }
+                
+                #box2{
+                    z-index:1;
+                    background-color:#FFFFFF;
+                    width: 900px;
+			color: black;
+			font-size: 18px;
+			text-align: left;
+			margin-top: 80px;
+                        margin-bottom: 10px;
+			padding: 10px;
+			border-radius: 10px;
+			border: none;
+			outline: none;
+                        border:solid 1px black;
+                }
+                
+		h1{     
+			color: blue;
+			font-size: 72px;
+			text-align: center;
+			margin-top: 150px;
+                        border:solid 1px black;
+		}
+                input[type="number"] {
+			display: block;
+                        width: 300px;
+			margin: 0 auto;
+                        border-width: 30px;
+                        margin-bottom: 5px;
+			padding: 10px;
+			font-size: 18px;
+			border-radius: 10px;
+			border: none;
+			outline: none;
+                        border:solid 1px black;
+		}
+		input[type="text"] {
+			display: block;
+                        border-width: 30px;
+                        width: 300px;
+			margin: 0 auto;
+                        margin-bottom: 5px;
+			padding: 10px;
+			font-size: 18px;
+			border-radius: 10px;
+			border: none;
+			outline: none;
+                        border:solid 1px black;
+		}
+		button {
+			display: block;
+                        border-width: 30px;
+                        width: 300px;
+			margin: 0 auto;
+                        margin-bottom: 10px;
+			padding: 10px;
+			font-size: 18px;
+			border-radius: 10px;
+			border: none;
+			outline: none;
+                        border:solid 1px black;
+		}
+                div{
+			display: block;
+                        border-width: 10px;
+                        width: 300px;
+			margin: 0 auto;
+                        margin-bottom: 5px;
+			padding: 10px;
+			font-size: 18px;
+			border-radius: 10px;
+			border: none;
+			outline: none;
+               
+		}
+                select {
+			display: block;
+                        border-width: 30px;
+                        width: 320px;
+			margin: 0 auto;
+                        margin-bottom: 5px;
+			padding: 10px;
+			font-size: 18px;
+			border-radius: 10px;
+			border: none;
+			outline: none;
+                        border:solid 1px black;
+		}
+                #pregunta{
+                         color: blue;
+			border-width: 30px;
+                        width: 300px;
+			margin: 0 auto;
+                        margin-bottom: 5px;
+			padding: 10px;
+			font-size: 18px;
+			border-radius: 10px;
+			border: none;
+			outline: none;
+                      
+                }
+                #pe{
+                        color: blue;
+			border-width: 30px;
+                        width: 300px;
+			margin: 0 auto;
+                        margin-bottom: 5px;
+			padding: 10px;
+			font-size: 18px;
+			border-radius: 10px;
+			border: none;
+			outline: none;
+                }
+                p {
+                        color: black;
+			border-width: 30px;
+                        width: 1000px;
+			margin: 0 auto;
+                        margin-bottom: 5px;
+			padding: 10px;
+			font-size: 18px;
+			border-radius: 10px;
+			border: none;
+			outline: none;
+                      
+		}

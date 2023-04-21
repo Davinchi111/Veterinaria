@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Veterinaria</title>
+        <link href="micss.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="box1">Bienvenido a la veterinaria</div>
+        <form action="NewServlet" method="POST"> 
+            <P id="pe">Seleccione una accion</P>
+            <select id="accion" name="accion" placeholder="Accion">
+                <option value="agregar">Agregar mascota</option>
+                <option value="eliminar">Eliminar mascota</option>
+                <option value="datos">Mostrar datos</option>
+            </select>
+            
+            <label for="mascota"></label>
+            <input placeholder="Elija el tipo de mascota" type="text" list="mascota" name="tipomasc" id="tipomasc">
+            <datalist id="mascota">   
+                <option value="Gato">
+                <option value="Perro">
+            </datalist>
+
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="raza" placeholder="Raza de la mascota">
+            <input type="number" name="edad" placeholder="Edad">
+            <input type="text" name="color" placeholder="Color">
+
+            <div id="campo-de-texto" style="display:none;">
+                <label for="nivel"></label>
+                <input placeholder="Nivel de entrenamiento" type="number" name="nivel" id="nivel">
+            </div>
+            <P id="pregunta" style="display:none">Libre de toxoplasmosis?</P>
+            <select style="display:none" id="toxo" name="toxo">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+            </select>
+            
+            <div id="indice" style="display:none;">
+                <label for="ind"></label>
+                <input placeholder="Indique posicion a eliminar" type="number" name="ind" id="ind">
+            </div>
+            <button type="submit" value="Enviar">Enviar</button>
+            <button type="reset" value="Limpiar datos">Limpiar datos</button>
+
+            <script>
+                document.getElementById("tipomasc").addEventListener("input", function() {
+                    var seleccion = document.getElementById("tipomasc").value;
+
+                    if (seleccion === "Gato") {
+                      document.getElementById("pregunta").style.display = "block";
+
+                      document.getElementById("toxo").style.display = "block";
+                      document.getElementById("campo-de-texto").style.display = "none";
+                    } 
+                    if (seleccion === "Perro") {
+                      document.getElementById("campo-de-texto").style.display = "block";
+                      document.getElementById("pregunta").style.display = "none";
+
+                      document.getElementById("toxo").style.display = "none";
+                    } 
+
+                });
+                document.getElementById("accion").addEventListener("input", function() {
+                    var accion = document.getElementById("accion").value;
+                    if(accion === "eliminar"){
+                        document.getElementById("indice").style.display = "block";
+                    }
+                    if(accion === "agregar"){
+                        document.getElementById("indice").style.display = "none";
+                    }
+                    if(accion === ""){
+                        document.getElementById("indice").style.display = "none";
+                    }
+                });
+            </script>   
+        </form>
+    </body>
+</html>
+
